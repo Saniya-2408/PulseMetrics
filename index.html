@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulseMetrics | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="logo">❤️‍🔥 PulseMetrics | BI Dashboard</div>
+            <div class="nav-links">
+                <a href="index.html" class="active">🏠 Pulse Home</a>
+                <a href="monthly-report.html">📅 Rhythm Report</a>
+                <a href="products.html">🏷️ Product Pulse</a>
+                <a href="insights.html">💡 Signal Insights</a>
+            </div>
+        </nav>
+
+        <!-- Page Title -->
+        <h1>❤️‍🔥 PulseMetrics Dashboard</h1>
+        <p class="subtitle">Real-time Sales Intelligence | Jan - Apr 2024</p>
+
+        <!-- KPI Cards -->
+        <div class="kpi-grid">
+            <div class="kpi-card blue">
+                <div class="kpi-icon">💰</div>
+                <div class="kpi-value" id="totalSales">$124,500</div>
+                <div class="kpi-label">Total Revenue Pulse</div>
+                <div class="kpi-trend up">▲ +12% vs last cycle</div>
+            </div>
+            <div class="kpi-card green">
+                <div class="kpi-icon">📦</div>
+                <div class="kpi-value" id="totalOrders">143</div>
+                <div class="kpi-label">Order Frequency</div>
+                <div class="kpi-trend up">▲ +8% vs last cycle</div>
+            </div>
+            <div class="kpi-card orange">
+                <div class="kpi-icon">⭐</div>
+                <div class="kpi-value">4.8</div>
+                <div class="kpi-label">Customer Pulse Score</div>
+                <div class="kpi-trend down">▼ -2% vs last cycle</div>
+            </div>
+        </div>
+
+        <!-- Bar Chart Section -->
+        <div class="card">
+            <h2>📈 Monthly Revenue Pulse</h2>
+            <div class="bar-chart" id="barChart"></div>
+        </div>
+
+        <!-- Two Column Layout -->
+        <div class="two-columns">
+            <!-- Filter Section -->
+            <div class="card">
+                <h2>🎯 Pulse Filter</h2>
+                <label for="monthFilter">Select Month:</label>
+                <select id="monthFilter" class="filter-select">
+                    <option value="all">All Months</option>
+                    <option value="Jan">January Pulse</option>
+                    <option value="Feb">February Pulse</option>
+                    <option value="Mar">March Pulse</option>
+                    <option value="Apr">April Pulse</option>
+                </select>
+                <div class="filter-result" id="filterResult">
+                    <p>Selected: All Months</p>
+                    <p>Total Revenue: $124,500</p>
+                    <p>Total Orders: 143</p>
+                </div>
+            </div>
+
+            <!-- What-If Analysis -->
+            <div class="card">
+                <h2>🔮 Pulse Projector</h2>
+                <label for="growthSlider">Growth Scenario: <span id="growthPercent">15</span>%</label>
+                <input type="range" id="growthSlider" min="0" max="50" value="15" class="slider">
+                <div class="projection-box" id="projectionBox">
+                    <p>📊 Projected Pulse: <strong id="projectedAmount">$143,175</strong></p>
+                    <p>▲ +$18,675 growth signal</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            📡 PulseMetrics v1.0 | Data Source: Sales Pulse (Jan-Apr) | Last sync: April 2026
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
