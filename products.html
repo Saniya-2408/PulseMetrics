@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulseMetrics | Product Pulse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">❤️‍🔥 PulseMetrics | BI Dashboard</div>
+            <div class="nav-links">
+                <a href="index.html">🏠 Pulse Home</a>
+                <a href="monthly-report.html">📅 Rhythm Report</a>
+                <a href="products.html" class="active">🏷️ Product Pulse</a>
+                <a href="insights.html">💡 Signal Insights</a>
+            </div>
+        </nav>
+
+        <h1>🏷️ Product Pulse Analyzer</h1>
+        <p class="subtitle">Top products driving revenue heartbeat</p>
+
+        <div class="card">
+            <table class="data-table" id="productsTable">
+                <thead>
+                    <tr><th>Rank</th><th>Product Name</th><th>Category</th><th>Revenue Pulse ($)</th><th>Units Sold</th><th>Contribution</th></tr>
+                </thead>
+                <tbody id="productsTableBody"></tbody>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>📊 Product Pulse Distribution</h2>
+            <div class="bar-chart" id="productChart"></div>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="index.html" class="btn">← Back to Pulse Home</a>
+        </div>
+
+        <footer class="footer">📡 PulseMetrics | Top 5 products by revenue pulse | April 2026</footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
